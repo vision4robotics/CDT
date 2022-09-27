@@ -39,7 +39,7 @@ python test.py                      \
   --enhancername SCT                              \ # enhancer_name
 
   --d_weights ./experiments/CDT/model.pth         \ # denoiser_model
-  --denoisername CDT                              \ # denoiser_name
+  --denoisername CDT                                # denoiser_name
 
 ```
 
@@ -49,10 +49,10 @@ If you want to evaluate the trackers mentioned above, please put those results i
 
 ```
 python tools/eval.py                              \
-  --dataset UAVDark135                           \ # dataset_name
+  --dataset UAVDark135                            \ # dataset_name
   --datasetpath path/of/your/dataset              \ # dataset_path
   --tracker_path ./results                        \ # result_path
-  --tracker_prefix 'SiamAPN'                        # tracker_name
+  --tracker_prefix 'SiamAPN_SCT_CDT'                # tracker_name
 ```
 
 ## Contact
