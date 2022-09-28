@@ -1,4 +1,4 @@
-# [SiameseTracking4UAV: SiamGAT]
+# SiamGAT
 
 ## Model prepare
 
