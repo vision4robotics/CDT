@@ -17,19 +17,34 @@ Extensive evaluation and test experiments demonstrate that the proposed CDT has 
 The source code, pre-trained models, and experimental results are available at here.
 
 
-## Environment setup
+## Environment Preparing
 
+```
+python 3.8.3
+pytorch 1.11.0
+```
 
 ## Demo
 
 
+## Train
+
+Before training, you need to prepare the training set of the [SIDD](https://www.eecs.yorku.ca/~kamel/sidd/index.php) dataset. Run train.py.
+
+```
+python -m torch.distributed.launch --nproc_per_node=4 --master_port=12345 train.py -opt Denoising/Options/RealDenoising_CDT.yml --launcher pytorch
+```
+
+
 ## Test
+
+To evaluate the ability of CDT to overcome noise to improve UAV night tracking performance, you need to meet the enviroment requirements of base trackers and enhancers, as well as download their snapshots to corresponding folders at first. Details can be found in their repos. Currently supporting trackers including [SiamAPN](https://github.com/vision4robotics/SiamAPN), [SiamAPN++](https://github.com/vision4robotics/SiamAPN), [SiamRPN++](), [SiamBAN](https://github.com/hqucv/siamban), and [SiamGAT](https://github.com/ohhhyeahhh/SiamGAT), enhancers including [SCT](https://github.com/vision4robotics/SCT) and [DCE++](https://github.com/Li-Chongyi/Zero-DCE_extension).
 
 Take the test of SiamAPN_SCT_CDT as an example:
 
 ```
 python test.py                      \
-  --dataset UAVDark135                           \ # dataset_name
+  --dataset UAVDark135                            \ # dataset_name
   --datasetpath ./test_dataset                    \ # dataset_path
   --config ./experiments/SiamAPN/config.yaml      \ # tracker_config
   --snapshot ./experiments/SiamAPN/model.pth      \ # tracker_model
@@ -64,4 +79,6 @@ Kunhan Lu
 Email: lukunhan@tongji.edu.cn .
 
 ## Acknowledgements
-- The code is implemented based on [SNOT](https://github.com/vision4robotics/SiameseTracking4UAV). We would like to express our sincere thanks to the contributors.
+- The code is implemented based on [SNOT](https://github.com/vision4robotics/SiameseTracking4UAV), [BasicSR](https://github.com/XPixelGroup/BasicSR), and [Restormer](https://github.com/swz30/Restormer). We would like to express our sincere thanks to the contributors.
+
+- We would also like to thank [SiamAPN](https://github.com/vision4robotics/SiamAPN), [SiamAPN++](https://github.com/vision4robotics/SiamAPN), [SiamRPN++](), [SiamBAN](https://github.com/hqucv/siamban), and [SiamGAT](https://github.com/ohhhyeahhh/SiamGAT) trackers and [SCT](https://github.com/vision4robotics/SCT) and [DCE++](https://github.com/Li-Chongyi/Zero-DCE_extension) enhancers for their efforts.
