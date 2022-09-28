@@ -1,4 +1,4 @@
-# [SiameseTracking4UAV: SiamBAN]
+# SiamBAN
 
 ## Model prepare
 
