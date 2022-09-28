@@ -38,6 +38,8 @@ python -m torch.distributed.launch --nproc_per_node=4 --master_port=12345 train.
 
 ## Test
 
+Download our pretrained model by [CDT](https://pan.baidu.com/s/1mgQI_wzjod9ElYklbxYwBQ?pwd=cdtn)(code:cdtn).
+
 To evaluate the ability of CDT to overcome noise to improve UAV night tracking performance, you need to meet the enviroment requirements of base trackers and enhancers, as well as download their snapshots to corresponding folders at first. Details can be found in their repos. Currently supporting trackers including [SiamAPN](https://github.com/vision4robotics/SiamAPN), [SiamAPN++](https://github.com/vision4robotics/SiamAPN), [SiamRPN++](), [SiamBAN](https://github.com/hqucv/siamban), and [SiamGAT](https://github.com/ohhhyeahhh/SiamGAT), enhancers including [SCT](https://github.com/vision4robotics/SCT) and [DCE++](https://github.com/Li-Chongyi/Zero-DCE_extension).
 
 Take the test of SiamAPN_SCT_CDT as an example:
