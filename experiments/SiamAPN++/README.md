@@ -1,4 +1,4 @@
-# [SiameseTracking4UAV: SiamAPN++]
+# SiamAPN++
 
 ## Model prepare
 
