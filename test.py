@@ -13,7 +13,7 @@ import torch.nn.functional as F
 from snot.pipelines.pipeline_builder import build_pipeline
 from snot.datasets import DatasetFactory, datapath
 from denoiser.denoiser_builder import build_denoiser
-from enhencer.enhancer_builder import build_enhancer
+from enhancer.enhancer_builder import build_enhancer
 
 torch.set_num_threads(1) 
 
@@ -22,9 +22,9 @@ parser.add_argument('--dataset', default='', type=str,
                     help='datasets')
 parser.add_argument('--datasetpath', default='', type=str,
                     help='the path of datasets')
-parser.add_argument('--config', default='./experiments/CDT/model.pth', type=str,
+parser.add_argument('--config', default='./experiments/SiamAPN/model.pth', type=str,
                     help='config file')
-parser.add_argument('--snapshot', default='./experiments/CDT/model.pth', type=str,
+parser.add_argument('--snapshot', default='./experiments/SiamAPN/model.pth', type=str,
                     help='snapshot of models to eval')
 parser.add_argument('--trackername', default='SiamAPN', type=str,
                     help='name of tracker')
