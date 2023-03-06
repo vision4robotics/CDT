@@ -1,15 +1,19 @@
 # [CDT]
-# Cascaded Denoising Transformer for UAV Nighttime Tracking
+# Cascaded Denoising Transformer for UAV Nighttime Tracking (RAL2023)
 
 ### Kunhan Lu, Changhong Fu, Yucheng Wang, Haobo Zuo, Guangze Zheng, and Jia Pan
 
 This is the official code for the paper "Cascaded Denoising Transformer for UAV Nighttime Tracking".
 
+Kunhan Lu, Changhong Fu, Yucheng Wang, Haobo Zuo, Guangze Zheng, and Jia Pan, "Cascaded Denoising Transformer for UAV Nighttime Tracking," IEEE Robotics and Automation Letters, pp. 1-8, 2023.
+
+<img src="./CDT.png">
+
 # Abstract
 
-The automation of unmanned aerial vehicle (UAV) has been greatly promoted by visual object tracking methods with onboard cameras.
-However, the random and complicated noise produced by the cameras seriously hinders the performance of state-of-the-art (SOTA) UAV trackers, especially in low-illumination environments.
-To address this issue, this work proposes an efficient plug-and-play cascaded denoising Transformer (CDT) to suppress cluttered and complex noise, thereby boosting UAV tracking performance.
+The automation of unmanned aerial vehicles (UAVs) has been greatly promoted by visual object tracking methods with onboard cameras.
+However, the random and complicated real noise produced by the cameras seriously hinders the performance of state-of-the-art (SOTA) UAV trackers, especially in low-illumination environments.
+To address this issue, this work proposes an efficient plug-and-play cascaded denoising Transformer (CDT) to suppress cluttered and complex real noise, thereby boosting UAV tracking performance.
 Specifically, the novel U-shaped cascaded denoising network is designed with a streamlined structure for efficient computation.
 Additionally, shallow feature deepening (SFD) encoder and multi-feature collaboration (MFC) decoder are constructed based on multi-head transposed self-attention (MTSA) and multi-head transposed cross-attention (MTCA), respectively.
 A nested residual feed-forward network (NRFN) is developed to focus more on high-frequency information represented by noise.
