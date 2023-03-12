@@ -7,6 +7,8 @@ This is the official code for the paper "Cascaded Denoising Transformer for UAV 
 
 Kunhan Lu, Changhong Fu, Yucheng Wang, Haobo Zuo, Guangze Zheng, and Jia Pan, "Cascaded Denoising Transformer for UAV Nighttime Tracking," IEEE Robotics and Automation Letters, pp. 1-8, 2023.
 
+\[[paper]()\]
+
 <img src="./CDT.png">
 
 # Abstract
@@ -75,6 +77,26 @@ python tools/eval.py                              \
   --datasetpath path/of/your/dataset              \ # dataset_path
   --tracker_path ./results                        \ # result_path
   --tracker_prefix 'SiamAPN_SCT_CDT'                # tracker_name
+```
+
+## References
+
+```
+@article{Lu2023CascadedDT,  
+        title={{Cascaded Denoising Transformer for UAV Nighttime Tracking}},   
+        author={Lu, Kunhan and Fu, Changhong and Wang, Yucheng and Zuo, Haobo and Zheng, Guangze and Pan, Jia},  
+        journal={IEEE Robotics and Automation Letters},  
+        year={2023},  
+        pages={1-8}  
+}
+
+@article{Fu2022SiameseOT,  
+        title={{Siamese Object Tracking for Unmanned Aerial Vehicle: A Review and Comprehensive Analysis}},   
+        author={Fu, Changhong and Lu, Kunhan and Zheng, Guangze and Ye, Junjie and Cao, Ziang and Li, Bowen and Lu, Geng},  
+        journal={arXiv preprint arXiv:2205.04281},  
+        year={2022},  
+        pages={1-33}  
+}
 ```
 
 ## Contact
