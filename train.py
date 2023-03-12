@@ -23,7 +23,7 @@ import numpy as np
 def parse_options(is_train=True):
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        '-opt', type=str, default='./Denoising/Options/RealDenoising_Restormer.yml', help='Path to option YAML file.')
+        '-opt', type=str, default='', help='Path to option YAML file.')
     parser.add_argument(
         '--launcher',
         choices=['none', 'pytorch', 'slurm'],
