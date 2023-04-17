@@ -5,7 +5,7 @@
 
 This is the official code for the paper "Cascaded Denoising Transformer for UAV Nighttime Tracking".
 
-Kunhan Lu, Changhong Fu, Yucheng Wang, Haobo Zuo, Guangze Zheng, and Jia Pan, "Cascaded Denoising Transformer for UAV Nighttime Tracking," IEEE Robotics and Automation Letters, pp. 1-8, 2023.
+Kunhan Lu, Changhong Fu, Yucheng Wang, Haobo Zuo, Guangze Zheng, and Jia Pan, "Cascaded Denoising Transformer for UAV Nighttime Tracking," IEEE Robotics and Automation Letters, vol. 8, no. 6, pp. 3142-3149, 2023.
 
 \[[paper](https://ieeexplore.ieee.org/document/10093049)\]
 
@@ -87,9 +87,9 @@ python tools/eval.py                              \
         author={Lu, Kunhan and Fu, Changhong and Wang, Yucheng and Zuo, Haobo and Zheng, Guangze and Pan, Jia},  
         journal={IEEE Robotics and Automation Letters},  
         year={2023},
-        volume={},
-        number={},
-        pages={1-8},
+        volume={8},
+        number={6},
+        pages={3142-3149},
         doi={10.1109/LRA.2023.3264711}
 }
 
