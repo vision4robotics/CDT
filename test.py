@@ -22,7 +22,7 @@ parser.add_argument('--dataset', default='', type=str,
                     help='datasets')
 parser.add_argument('--datasetpath', default='', type=str,
                     help='the path of datasets')
-parser.add_argument('--config', default='./experiments/SiamAPN/model.pth', type=str,
+parser.add_argument('--config', default='./experiments/SiamAPN/config.yaml', type=str,
                     help='config file')
 parser.add_argument('--snapshot', default='./experiments/SiamAPN/model.pth', type=str,
                     help='snapshot of models to eval')
