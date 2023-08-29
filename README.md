@@ -52,7 +52,7 @@ To evaluate the ability of CDT to overcome noise to improve UAV night tracking p
 Take the test of SiamAPN_SCT_CDT as an example:
 
 ```
-python test.py                      \
+python test.py                                    \
   --dataset UAVDark135                            \ # dataset_name
   --datasetpath ./test_dataset                    \ # dataset_path
   --config ./experiments/SiamAPN/config.yaml      \ # tracker_config
@@ -93,12 +93,13 @@ python tools/eval.py                              \
         doi={10.1109/LRA.2023.3264711}
 }
 
-@article{Fu2022SiameseOT,  
+@article{Fu2023SiameseOT,  
         title={{Siamese Object Tracking for Unmanned Aerial Vehicle: A Review and Comprehensive Analysis}},   
         author={Fu, Changhong and Lu, Kunhan and Zheng, Guangze and Ye, Junjie and Cao, Ziang and Li, Bowen and Lu, Geng},  
-        journal={arXiv preprint arXiv:2205.04281},  
-        year={2022},  
-        pages={1-33}  
+        journal={Artificial Intelligence Review},  
+        year={2023},  
+        pages={1-61},
+        doi={10.1007/s10462-023-10558-5}  
 }
 ```
 
