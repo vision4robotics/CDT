@@ -86,10 +86,10 @@ python tools/eval.py                              \
         title={{Cascaded Denoising Transformer for UAV Nighttime Tracking}},   
         author={Lu, Kunhan and Fu, Changhong and Wang, Yucheng and Zuo, Haobo and Zheng, Guangze and Pan, Jia},  
         journal={IEEE Robotics and Automation Letters},  
-        year={2023},
         volume={8},
         number={6},
         pages={3142-3149},
+        year={2023},
         doi={10.1109/LRA.2023.3264711}
 }
 
@@ -97,9 +97,11 @@ python tools/eval.py                              \
         title={{Siamese Object Tracking for Unmanned Aerial Vehicle: A Review and Comprehensive Analysis}},   
         author={Fu, Changhong and Lu, Kunhan and Zheng, Guangze and Ye, Junjie and Cao, Ziang and Li, Bowen and Lu, Geng},  
         journal={Artificial Intelligence Review},  
-        year={2023},  
-        pages={1-61},
-        doi={10.1007/s10462-023-10558-5}  
+        volume={56},
+        number={Suppl 1},
+        pages={1417-1477},
+        year={2023},
+        doi={10.1007/s10462-023-10558-5}
 }
 ```
 
